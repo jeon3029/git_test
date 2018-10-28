@@ -1,0 +1,14 @@
+git init //initial command
+git commit // basic command
+git add // change files to staged status
+git commit -m 'contents' //commit current changes.
+git commit -a -m 'cc' // -a option : Automatically add tracked files
+git clone https://github.com/libgit2/libgit2  //EX
+git status //check status
+git statis -s //check status short
+.gitignore // ignore files when check files. EX)log, tmp, pid, binary files.
+           // PATTERNS : Glob pattern. for more example : https://github.com/github/gitignore
+git diff //check changed contents : unstaged files
+git diff --staged(or, cached) //check changed contents : staged files
+
+
