@@ -1,6 +1,8 @@
 git init //initial command
 git commit // basic command
 git add // change files to staged status
+git rm // delete from tracked files.(file remains in dir)
+git mv // change name for files(short for :  mv a b ; git rm a; git add b)
 git commit -m 'contents' //commit current changes.
 git commit -a -m 'cc' // -a option : Automatically add tracked files
 git clone https://github.com/libgit2/libgit2  //EX
@@ -11,4 +13,10 @@ git statis -s //check status short
 git diff //check changed contents : unstaged files
 git diff --staged(or, cached) //check changed contents : staged files
 
-
+git log // check commit history
+git log -p -2 //check last 2 commits and check diffrences
+git log --stat //check log and statistics.
+git log --pretty=oneline //oneline,short,full,fuller options
+git log --pretty=format:"%h - %an, %an, %ar : %s" //formating outputs. useful in parsing output
+//%H %h %T %t %P %p %an %ae %ad %ar %cn %ce %cr %s options mainly used in pretty format options
+git log --since=2.weeks --until1=1day ago
